@@ -225,10 +225,10 @@ Class DirLib{
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="assets/style.css" type="text/css">
-<script type="text/javascript" src="assets/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="assets/easyTooltip.js"></script>
-<script type="text/javascript" src="assets/jquery.lazyload.js"></script>
+<link rel="stylesheet" href="//landzz.github.io/assets/style.css" type="text/css">
+<script type="text/javascript" src="//landzz.github.io/assets/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="//landzz.github.io/assets/easyTooltip.js"></script>
+<script type="text/javascript" src="//landzz.github.io/assets/jquery.lazyload.js"></script>
 
 <style type="text/css">
 #DIR_AREA{margin-top:50px;}
