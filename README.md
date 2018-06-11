@@ -16,5 +16,5 @@
  
  > 브라우져의 고유식별자를 확인할수있음. 
  > 쿠키등필요없음, 접속도메인별로 다르게 생성됨
- ## 확인 : https://landzz.github.io/fingerprint.html 
+ > https://landzz.github.io/fingerprint.html 
 
