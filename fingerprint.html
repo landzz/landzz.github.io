@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>brwoser fingerprint</title>
+<style type="text/css">
+body,div,strong,input{font-size:13px;line-height:2em;}
+#finger_val{padding:0px 10px;background-color:#eee;border:1px solid #ccc;width:250px;}
+#finger_val2 div{margin:5px;padding:5px;border:1px solid #ccc;line-height:1.3em;}
+#finger_val2 strong{display:inline-block;width:160px;background-color:#666;color:#fff;padding:5px 10px;margin:0 10px 10px 0;}
+</style>
+</head>
+<body>
+<h3>브라우저 핑거프린트..</h3>
+https://github.com/Valve/fingerprintjs2
+<br>- 쿠키사용안함
+<br>- 도메인따라 다른듯
+<br>
+현재고유값 : <input id="finger_val" readonly></input>
+<br>&nbsp;<hr>
+<div id="finger_val2" ></div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.8.0/fingerprint2.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+	new Fingerprint2().get(function(result, components) {
+		console.log('9e0c4df3fa8415d376e56aacfd4dbbcb : 2018-06-08 08:18');
+		console.log(result) // a hash, representing your device fingerprint
+		console.log(components) // an array of FP components
+		$('#finger_val').val(result);
+		//$('#finger_val2').html(JSON.stringify(components));
+		$.each(components, function(key,val){
+			console.dir(key+''+val.key);
+			var text = '<div class="ext_val"><strong>'+val.key+'</strong>'+val.value+'</div>';
+			$('#finger_val2').append(text);
+		});
+
+	})	;
+});
+//-->
+</script>
+<br>&nbsp;<hr>
+</body>
+</html>
